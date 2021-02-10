@@ -1,0 +1,22 @@
+package pacoteDesafio;
+
+import java.util.Scanner;
+
+public class ClasseDesafio {
+
+	public static void main(String[] args) {
+	
+			int n = 0, acumulador = 0;
+			Scanner ent = new Scanner(System.in);
+			System.out.println("Digite o valor de n: ");
+			n = ent.nextInt();
+			
+			for (int i = 0; i<= n; i++) {
+				if (i % 2 == 0)
+					acumulador += i;
+			}
+		System.out.printf("Valor acumulado: %d.", acumulador);
+
+	}
+
+}
